@@ -1,0 +1,21 @@
+.container-botao-flutuante{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+.botao-flutuante{
+    background-color: #4894FF;
+    box-shadow: 0px 4px 16px 0px #4894FF80;
+    width: 4em;
+    height: 4em;
+    border: none;
+    border-radius: 50px;
+    background-image: url(../img/maisicone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (min-width:1600px){
+    .container-botao-flutuante{
+        display: none;
+    }
+}

@@ -1,0 +1,93 @@
+.rodape {
+    background-color: var(--branco);
+    color: #F2FFFC;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 12px 12px 0 0;
+    filter: drop-shadow(0 -1px 3px #46464625);
+}
+
+.rodape-botoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cinza-titulo);
+    font-size: 12px;
+    font-weight: 400;
+    gap: 0.5em;
+}
+
+.container-formulario {
+    display: none;
+}
+
+@media screen and (min-width:1600px) {
+    .form {
+        width: 40%;
+        background: #f1f1f1;
+        border-radius: 80px;
+        padding: 2em;
+    }
+
+    .form>#horario,
+    #nome,
+    #sobrenome,
+    #consulta-tipo,
+    #data,
+    textarea {
+        border-radius: 8px;
+        border: 1px solid rgba(236, 236, 236, 1);
+        width: 30em;
+        height: 3.5em;
+        text-align: center;
+    }
+
+    .container-formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 2em 0;
+        justify-content: center;
+        background: linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);
+    }
+
+    .campo {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .botao-form {
+        padding: 1em 2em;
+        border: none;
+        border-radius: 0.5em;
+        font-family: var(--fonte-principal);
+        background-color: var(--azul-botao);
+        box-shadow: 0px 4px 16px 0px #4894FF29;
+        color: var(--branco);
+        font-weight: 500;
+        width: 30%;
+        align-self: center;
+        margin: 2em;
+    }
+
+    .form>.titulo-form {
+        padding: 2em;
+        font-size: 18px;
+        color: var(--cinza-titulo);
+        display: flex;
+        justify-content: center;
+    }
+}
